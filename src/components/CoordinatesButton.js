@@ -2,9 +2,10 @@
 import React, {Component} from 'react'
 
 export default class CoordinatesButton extends Component {
+    super 
 
     click = (event) => {
-        this.props.onReceiveCoordinates
+        this.props.onReceiveCoordinates([event.clientX, event.clientY])
     }
 
 
